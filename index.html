@@ -1,0 +1,77 @@
+---
+layout: default
+title: Alice Ma
+---
+
+<!-- ================================================================
+  CONTENT GUIDE — personalize the sections below:
+  - Header subtitle: your role or tagline
+  - Intro: a short bio and what you're currently up to
+  - _data/skills.yml: your tools and technologies
+  - _data/projects.yml: your featured projects (title, url, description)
+  - _data/interests.yml: your hobbies and interests
+  - _config.yml: add your linkedin_username when ready
+  - assets/resume.pdf: drop your resume PDF here
+================================================================ -->
+
+<header class="fade-in">
+  <div class="top">
+    <div>
+      <h1 class="header-title">alice ma.</h1>
+      <p class="header-subtitle"><!-- your role or tagline here --></p>
+    </div>
+    <div class="header-socials">
+      <a class="btn" href="https://github.com/{{ site.github_username }}" target="_blank">github</a>
+      {% if site.linkedin_username != "" %}
+      <a class="btn" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">linkedin</a>
+      {% endif %}
+      <a class="btn" href="/assets/resume.pdf" target="_blank">resume</a>
+      <a class="btn" href="mailto:{{ site.email }}">email</a>
+    </div>
+  </div>
+</header>
+
+<section class="intro fade-in">
+  <!-- Replace with your own intro paragraph(s) -->
+  <p>Hi! My name is Alice. I'm a <!-- your background --> based in <!-- your city -->.</p>
+  <p><strong>currently:</strong></p>
+  <ul>
+    <li><!-- e.g. "open to full-time opportunities in software engineering" --></li>
+    <li><!-- e.g. "building a side project in ..." --></li>
+  </ul>
+</section>
+
+<section class="skills fade-in">
+  <h2>skills</h2>
+  <p>
+    {% for skill in site.data.skills %}{{ skill }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+  </p>
+</section>
+
+<section class="projects fade-in">
+  <h2>projects</h2>
+  <div class="project-cards">
+    {% for project in site.data.projects %}
+    <a class="project-card" href="{{ project.url }}" target="_blank">
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="interests fade-in">
+  <h2>interests</h2>
+  <p>
+    {% for interest in site.data.interests %}{{ interest }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+  </p>
+</section>
+
+<section class="contact fade-in">
+  <h2>contact</h2>
+  <p>feel free to reach out — <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+</section>
+
+<footer class="fade-in">
+  <p>made with ♥ by alice ma</p>
+</footer>
