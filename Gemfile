@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.3'
 gem 'webrick'
-gem 'wdm', '>= 0.1.0'
+gem 'wdm', '>= 0.1.0', platforms: [:mingw, :x64_mingw, :mswin]
 gem 'csv'
 gem 'bigdecimal'
 
