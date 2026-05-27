@@ -1,8 +1,15 @@
 # Add your own projects below — each entry shows as a card on the site
-- title: Project One
+- title: Smart dictionary [WIP]
   url: https://github.com/amecila1
-  description: A short description of what this project does and the problem it solves.
+  description: A smart dictionary that helps me practice Dutch vocabulary.
+  tags: [Software, Python, Web development]
 
-- title: Project Two
+- title: Fook
   url: https://github.com/amecila1
-  description: A short description of what this project does and the problem it solves.
+  description: An attachment for any metallic eating utensil that reminds the eater to slow down when they eat too fast.
+  tags: [Hardware, Circuit design, Prototyping]
+
+- title: What to Wear?
+  url: https://github.com/amecila1
+  description: Web application that suggests a colour co-ordinated outfit based on items available in a users's wardrobe and the forecasted weather of their location.
+  tags: [Python, Javascript, Google Datastore]
