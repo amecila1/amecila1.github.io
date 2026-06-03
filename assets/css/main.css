@@ -158,12 +158,15 @@ strong {
 }
 
 .skill-pill {
-  background-color: #e0f0eb;
-  color: #024133;
   border-radius: 20px;
   padding: 5px 14px;
   font-size: 15px;
 }
+
+.skill-pill--data     { background-color: #fff3e0; color: #c9903a; }
+.skill-pill--technical { background-color: #e0f0eb; color: #024133; }
+.skill-pill--finance  { background-color: #fce8e8; color: #b83030; }
+.skill-pill--strategy { background-color: #e8f4fb; color: #7aaac8; }
 
 /* ── Project Carousel ─────────────────────────── */
 .carousel {
@@ -175,6 +178,8 @@ strong {
 .carousel-window {
   overflow: hidden;
   flex: 1;
+  padding-top: 8px;
+  margin-top: -8px;
 }
 
 .carousel-track {
@@ -206,7 +211,7 @@ strong {
   flex: 0 0 calc(50% - 10px);
   min-width: 0;
   padding: 22px;
-  border: 2px solid #7ab8a4;
+  border: 2px solid #e0f0eb;
   border-radius: 12px;
   text-decoration: none;
   color: inherit;

@@ -52,7 +52,7 @@ title: Alice Ma
 <section class="skills fade-in">
   <h2>skills</h2>
   <div class="skill-pills">
-    {% for skill in site.data.skills %}<span class="skill-pill">{{ skill }}</span>{% endfor %}
+    {% for skill in site.data.skills %}<span class="skill-pill skill-pill--{{ skill.category }}">{{ skill.name }}</span>{% endfor %}
   </div>
 </section>
 

@@ -1,4 +1,32 @@
-# Edit this list with your own skills/tools
-- Python
-- SQL
-- Git
+- name: SQL
+  category: data
+- name: Python
+  category: data
+- name: Visual analytics
+  category: data
+- name: Data modelling
+  category: data
+- name: Git
+  category: technical
+- name: Power Automate
+  category: technical
+- name: VBA
+  category: technical
+- name: Ruby on Rails
+  category: technical
+- name: CPA
+  category: finance
+- name: Financial audit
+  category: finance
+- name: Financial modelling
+  category: finance
+- name: M&A
+  category: strategy
+- name: Market sizing
+  category: strategy
+- name: Stakeholder management
+  category: strategy
+- name: Cross-cultural collaboration
+  category: strategy
+- name: Coaching
+  category: strategy
