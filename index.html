@@ -14,23 +14,6 @@ title: Alice Ma
   - assets/resume.pdf: drop your resume PDF here
 ================================================================ -->
 
-<header class="fade-in">
-  <div class="top">
-    <div>
-      <h1 class="header-title">alice ma.</h1>
-      <p class="header-subtitle">strategy consultant and recreational tinkerer</p>
-    </div>
-    <div class="header-socials">
-      <a class="btn" href="https://github.com/{{ site.github_username }}" target="_blank">github</a>
-      {% if site.linkedin_username != "" %}
-      <a class="btn" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">linkedin</a>
-      {% endif %}
-      <a class="btn" href="/assets/resume/resume.pdf" target="_blank">resume</a>
-      <a class="btn" href="mailto:{{ site.email }}">email</a>
-    </div>
-  </div>
-</header>
-
 <section class="intro fade-in">
   <div class="intro-layout">
     <img src="/assets/img/photo.jpeg" alt="Alice Ma" class="profile-photo">
@@ -63,7 +46,7 @@ title: Alice Ma
     <div class="carousel-window">
       <div class="carousel-track">
         {% for project in site.data.projects %}
-        <a class="project-card" href="{{ project.url }}" target="_blank">
+        <a class="project-card" href="{{ project.url }}"{% if project.url contains 'http' %} target="_blank"{% endif %}>
           <h3>{{ project.title }}</h3>
           <p>{{ project.description }}</p>
           {% if project.tags %}

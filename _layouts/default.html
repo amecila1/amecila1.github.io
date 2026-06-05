@@ -12,6 +12,22 @@
 </head>
 <body>
   <div class="cursor-main" id="cursor"></div>
+  <header>
+    <div class="top">
+      <div>
+        <h1 class="header-title"><a href="/" class="header-home-link">alice ma.</a></h1>
+        <p class="header-subtitle">strategy consultant and recreational tinkerer</p>
+      </div>
+      <div class="header-socials">
+        <a class="btn" href="https://github.com/{{ site.github_username }}" target="_blank">github</a>
+        {% if site.linkedin_username != "" %}
+        <a class="btn" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">linkedin</a>
+        {% endif %}
+        <a class="btn" href="/assets/resume/resume.pdf" target="_blank">resume</a>
+        <a class="btn" href="mailto:{{ site.email }}">email</a>
+      </div>
+    </div>
+  </header>
   {{ content }}
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
