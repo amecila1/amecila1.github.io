@@ -40,37 +40,39 @@ title: Smart Dictionary — Alice Ma
 
 <section class="fade-in">
   <h2>Why I built this</h2>
-  <p>I've been learning Dutch slowly and found that existing tools either don't let me import my own word lists, don't adapt to my weak spots, or require me to maintain two separate apps. I wanted one thing that does all of this, backed by a simple database I can query myself.</p>
+  <p>I'm a Dutch learner approaching the B1 level, and I found that existing Dutch-English tools gave translations but not the context I needed to see a word "in action". Knowing that <i>spreken</i> means "to speak" doesn't tell me how to conjugate it, when it's too formal, or what related words I should also know. I built Woordje to be the tool I wished I had.</p>
 </section>
 
 <section class="fade-in">
   <h2>The Solution</h2>
-  <p>A personal tool for learning Dutch vocabulary. Instead of static flashcards, this dictionary adapts to what I actually struggle with — surfacing words I've gotten wrong recently, showing example sentences, and tracking progress over time.</p>
+  <p>Woordje is a contextual dictionary built for A2/B1 Dutch learners. Instead of bare translations, each entry shows a word in use: example sentences graded by CEFR level, conjugation tables, register labels, and a related-words ecosystem that shows learners how vocabulary connects. I also added click-to-reveal translations to allow learners to test their comprehension before checking.</p>
   <div class="skill-pills" style="margin-top: 14px;">
-    <span class="skill-pill skill-pill--technical">Python</span>
-    <span class="skill-pill skill-pill--technical">Flask</span>
-    <span class="skill-pill skill-pill--technical">SQLite</span>
-    <span class="skill-pill skill-pill--data">Spaced repetition</span>
+    <span class="skill-pill skill-pill--technical">React.js</span>
+    <span class="skill-pill skill-pill--technical">Vite</span>
+    <span class="skill-pill skill-pill--technical">Supabase</span>
+    <span class="skill-pill skill-pill--technical">SQL</span>
+    <span class="skill-pill skill-pill--technical">Vercel</span>
   </div>
 </section>
 
 <section class="fade-in">
   <h2>Key features</h2>
   <ul>
-    <li>Word import from CSV</li>
-    <li>Quiz loop that surfaces weak spots using a spaced repetition algorithm</li>
-    <li>Progress tracking over time</li>
+    <li>CEFR-leveled example sentences (A1/A2, B1/B2, C1) with tap-to-reveal English translations, so learners can self-test before checking their understanding</li>
+    <li>Verb conjugation tables covering present, simple past, and perfect tenses</li>
+    <li>Register labels and a related-words ecosystem that group synonyms by formality, helping learners learn similar words for the context</li>
+    <li>Labels to show gender (de/het) on nouns and types of verbs (separable, reflexive) — a persistent pain point for Dutch learners (or at least this one!)</li>
+    <li>Word highlighting across all example sentences so the target word is easy to spot in context</li>
   </ul>
 </section>
 
 <section class="fade-in">
-  <h2>User Story</h2>
-  <p></p>
-</section>
-
-<section class="fade-in">
   <h2>Decisions and tradeoffs</h2>
-  <p></p>
+  <ul>
+    <li>I shipped the first version with pre-generated static JSON entries rather than a live database. I chose Supabase so that I could better manage the database with SQL as it grew, and also to practice database skills.</li>
+    <li>I prioritized pedagogically useful entries at the B1/B2 level rather than trying to cover a large word count, under the assumption that 500 well-built entries would serve learners most efficiently.</li>
+    <li>I wrote some example sentences by hand and others with Claude — I deliberately avoided using AI to generate everything to keep difficulty progressive and grammar correct, trading some scalability for quality control.</li>
+  </ul>
 </section>
 
 <section class="fade-in">
