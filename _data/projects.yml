@@ -1,5 +1,5 @@
 # Add your own projects below — each entry shows as a card on the site
-- title: Smart dictionary [WIP]
+- title: Smart dictionary
   url: /smart-dictionary
   description: A smart dictionary that helps me practice Dutch vocabulary.
   tags: [Software, Python, Web development]
